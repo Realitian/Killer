@@ -1,3 +1,6 @@
 #!/bin/bash
 
-python -m SimpleHTTPServer 10000
+cd server
+node server.js&
+cd ..
+python -m http.server 1000

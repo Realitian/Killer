@@ -35,7 +35,7 @@ Class("Dodgem", {
 
 	onCreate: function() {
 
-		var server = "http://marcostagni.com:8000";
+		var server = "http://localhost:8000";
 		this.socket = io(server, {'transports': ['websocket']});//io("http://marcostagni.com:8080");
 		this.socket.on("connect", function(data) {
 			//console.log(data);
